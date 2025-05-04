@@ -171,6 +171,25 @@ body {
     text-align: justify;
 }
 
+.skills__list {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.skills__item {
+    color: var(--secondary-text-color);
+    justify-self: center;
+    list-style: none;
+}
+
+@media screen and (max-width: 576px) {
+    .skills__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
 /* Experience and additional info styles */
 .experiences {
     flex: 1 1 60%;
@@ -264,4 +283,9 @@ body {
 
 .additional-info__languages-item {
     color: var(--secondary-text-color);
+}
+
+.additional-info__image {
+    width: 100%;
+    max-width: 576px;
 }
